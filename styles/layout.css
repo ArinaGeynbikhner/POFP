@@ -1,45 +1,46 @@
 body {
     width: 100%;
-    height: 100vw;
+    height: auto;
     overflow-x: hidden;
     background-color: black;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
     }
 
 .lobby {
     width: 100%;
-    height: 100vw;
+    height: auto;
     background-color: black;
 }
 .dots {
     position: absolute;
-    top: 58%;
+    top: 14.5vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 96%;
     height: auto;
     z-index: 100;
-  }
-  
-  .dots img {
+}
+.dots img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+    display: block;
+}
 
 .nav-graph {
     position: absolute;
     top: 3.2vw;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 12;
+    z-index: 100;
 }
 .logo {
     position: absolute;
     top: 3.7vw;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 12;
+    z-index: 100;
 }
 .navigation-bar {
     position: absolute;
@@ -47,8 +48,8 @@ body {
     top: 3vw;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 12;
     color: #ffffff;
+    z-index: 100;
 }
 .merch {
     position: absolute;
@@ -59,8 +60,8 @@ body {
     font-size: 14px;
     color: #888888;
     text-align: left;
-    position: absolute;
     font-weight: 700;
+    z-index: 100;
 }
 .game {
     position: absolute;
@@ -71,8 +72,8 @@ body {
     font-size: 14px;
     color: #888888;
     text-align: left;
-    position: absolute;
     font-weight: 700;
+    z-index: 100;
 }
 .cart {
     position: absolute;
@@ -83,8 +84,8 @@ body {
     font-size: 14px;
     color: #888888;
     text-align: left;
-    position: absolute;
     font-weight: 700;
+    z-index: 100;
 }
 
 .pofp {
@@ -95,8 +96,8 @@ body {
     font-size: 12px;
     color: #ffffff;
     text-align: left;
-    position: absolute;
-    font-weight: 500; 
+    font-weight: 500;
+    z-index: 100;
 }
 .year {
     position: absolute;
@@ -106,6 +107,70 @@ body {
     font-size: 12px;
     color: #ffffff;
     text-align: left;
-    position: absolute;
-    font-weight: 500; 
+    font-weight: 500;
+    z-index: 100; 
 }
+.text-block {
+    position: absolute;
+    top: 22vw;
+    left: 7%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    z-index: 100;
+}
+.nav-era {
+    position: absolute;
+    top: 33.3vw;
+    left: 5.3%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    z-index: 100;
+}
+.era-1 {
+    position: absolute;
+    top: -2vw;
+    left: 7%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500; 
+    z-index: 100;
+}
+.era-2 {
+    position: absolute;
+    top: 6vw;
+    left: 115%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    z-index: 100;
+}
+.era-3 {
+    position: absolute;
+    top: 14vw;
+    left: 7%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500; 
+    z-index: 100;
+}
+.person {
+    position: absolute; 
+    top: 11vw; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+.person img {
+    position: relative;
+    z-index: 1;
+  }
+  
