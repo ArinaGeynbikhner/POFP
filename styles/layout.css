@@ -41,7 +41,6 @@ html, body {
     margin: 0 auto;
     color: #ffffff;
     z-index: 100;
-    border: 2px solid aqua;
 }
 
 .nav-graph {
@@ -98,7 +97,7 @@ html, body {
 }
 
 .cart {
-    top: 6.4vw;
+    top: 7vw;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -136,25 +135,35 @@ html, body {
     font-weight: 500;
     z-index: 100;
 }
+.nav-era-container {
+    position: relative;
+    max-width: 9vw;
+    width: 100%;
+    height: 25%;
+    left: 2.3%;
+    top: 25vw;
+    color: #ffffff;
+    z-index: 100;
+}
 .nav-era {
     position: absolute;
-    top: 33.3vw;
-    left: 5.5%;
-    transform: translateX(-50%);
+    top: 2vw;
+    left: 0;
     z-index: 100;
-    max-width: 60vw;
+    width: 7.3vw; 
 }
 .nav-era img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .era-1 {
     position: absolute;
-    top: -2vw;
-    left: 7%;
+    top: 0vw;
+    left: 6%;
     transform: translateX(-50%);
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #ffffff;
     text-align: left;
     font-weight: 500; 
@@ -162,10 +171,10 @@ html, body {
 }
 .era-2 {
     position: absolute;
-    top: 6vw;
-    left: 115%;
+    top: 8.6vw;
+    left: 98%;
     transform: translateX(-50%);
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #ffffff;
     text-align: left;
     font-weight: 500;
@@ -173,10 +182,10 @@ html, body {
 }
 .era-3 {
     position: absolute;
-    top: 14vw;
-    left: 7%;
+    top: 17vw;
+    left: 6%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 0.9em;
     color: #ffffff;
     text-align: left;
     font-weight: 500; 
@@ -187,10 +196,8 @@ html, body {
     position: fixed;
     width: 100%;
     height: 60vw;
-    /* top: 14vh; */
     bottom: 0;
     left: 0%;
-    /* transform: translateX(-50%); */
     z-index: 1;
   }
   
