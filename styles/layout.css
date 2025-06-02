@@ -1,17 +1,21 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden; 
     background-color: black;
     font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-    }
+  }
 
-.lobby {
+    .lobby {
+    position: relative;
     width: 100%;
-    height: auto;
-    background-color: black;
-}
+    height: 100vh;
+    overflow: hidden;
+    }
+      
 .dots {
     position: absolute;
     top: 14.5vh;
@@ -28,72 +32,83 @@ body {
     display: block;
 }
 
-.nav-graph {
-    position: absolute;
-    top: 3.2vw;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-}
-.logo {
-    position: absolute;
-    top: 3.7vw;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-}
 .navigation-bar {
-    position: absolute;
+    position: relative;
+    max-width: 60vw;
     width: 100%;
-    top: 3vw;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 12%;
+    top: 2vw;
+    margin: 0 auto;
     color: #ffffff;
     z-index: 100;
+    border: 2px solid aqua;
 }
-.merch {
+
+.nav-graph {
     position: absolute;
-    top: 0vw;
-    left: 42%;
-    transform: translateX(-50%);
-    z-index: 12;
-    font-size: 14px;
-    color: #888888;
-    text-align: left;
-    font-weight: 700;
-    z-index: 100;
-}
-.game {
-    position: absolute;
-    top: 0vw;
-    left: 58%;
-    transform: translateX(-50%);
-    z-index: 12;
-    font-size: 14px;
-    color: #888888;
-    text-align: left;
-    font-weight: 700;
-    z-index: 100;
-}
-.cart {
-    position: absolute;
-    top: 6.3vw;
+    top: 0.2vw;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 12;
-    font-size: 14px;
+    z-index: 100;
+    width: 14vw; 
+}
+
+.nav-graph img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 45vw; 
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.merch, .game, .cart {
+    position: absolute;
+    font-size: 1vw;
     color: #888888;
     text-align: left;
     font-weight: 700;
     z-index: 100;
+    white-space: nowrap;
+}
+
+.merch {
+    top: 0vw;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.game {
+    top: 0vw;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.cart {
+    top: 6.4vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .pofp {
     position: absolute;
     top: 10.3vw;
-    left: 7%;
+    left: 7.6%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 0.8em;
     color: #ffffff;
     text-align: left;
     font-weight: 500;
@@ -104,7 +119,7 @@ body {
     top: 10.3vw;
     left: 96%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 0.8em;
     color: #ffffff;
     text-align: left;
     font-weight: 500;
@@ -113,9 +128,9 @@ body {
 .text-block {
     position: absolute;
     top: 22vw;
-    left: 7%;
+    left: 7.6%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 0.8em;
     color: #ffffff;
     text-align: left;
     font-weight: 500;
@@ -124,17 +139,22 @@ body {
 .nav-era {
     position: absolute;
     top: 33.3vw;
-    left: 5.3%;
+    left: 5.5%;
     transform: translateX(-50%);
-    font-size: 12px;
     z-index: 100;
+    max-width: 60vw;
 }
+.nav-era img {
+    width: 100%;
+    height: auto;
+}
+
 .era-1 {
     position: absolute;
     top: -2vw;
     left: 7%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 0.8em;
     color: #ffffff;
     text-align: left;
     font-weight: 500; 
@@ -145,7 +165,7 @@ body {
     top: 6vw;
     left: 115%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 0.8em;
     color: #ffffff;
     text-align: left;
     font-weight: 500;
@@ -162,15 +182,20 @@ body {
     font-weight: 500; 
     z-index: 100;
 }
+
 .person {
-    position: absolute; 
-    top: 11vw; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; 
-}
-.person img {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 60vw;
+    /* top: 14vh; */
+    bottom: 0;
+    left: 0%;
+    /* transform: translateX(-50%); */
     z-index: 1;
   }
   
+  .person img {
+    position: relative;
+    width: 100%;
+    height: 60vw;
+  }
