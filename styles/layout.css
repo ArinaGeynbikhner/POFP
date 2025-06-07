@@ -9,12 +9,23 @@ html, body {
     font-family: 'Inter', sans-serif;
   }
 
-    .lobby {
+.lobby {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     }
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
       
 .dots {
     position: absolute;
@@ -94,6 +105,16 @@ html, body {
     top: 0vw;
     left: 65%;
     transform: translateX(-50%);
+    text-decoration: none;   
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+.game:hover {
+  color: #fff;             
+}
+
+.game:active {
+  color: #fff;               
 }
 
 .cart {
@@ -104,8 +125,8 @@ html, body {
 
 .pofp {
     position: absolute;
-    top: 10.3vw;
-    left: 7.6%;
+    top: 12vw;
+    left: 6.6%;
     transform: translateX(-50%);
     font-size: 0.8em;
     color: #ffffff;
@@ -115,7 +136,7 @@ html, body {
 }
 .year {
     position: absolute;
-    top: 10.3vw;
+    top: 12vw;
     left: 96%;
     transform: translateX(-50%);
     font-size: 0.8em;
@@ -206,3 +227,136 @@ html, body {
     width: 100%;
     height: 60vw;
   }
+
+  .game-screen {
+   background-color: #000;
+   color: #fff;
+   min-height: 100vh;
+}
+
+body.game-page .game {
+  color: white;
+  text-decoration: none;
+}
+.inicialisation {
+    position: absolute;
+    top: 12vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    z-index: 100; 
+}
+.dot {
+  opacity: 0;
+  animation: blink 1.5s infinite;
+}
+
+.dot-1 {
+  animation-delay: 0s;
+}
+
+.dot-2 {
+  animation-delay: 0.2s;
+}
+
+.dot-3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.pofp-low {
+    position: absolute;
+    top: 68vw;
+    left: 8%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    z-index: 100;
+}
+.year-low {
+    position: absolute;
+    top: 68vw;
+    left: 96%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    z-index: 100;  
+}
+.circle-composition {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55vw;
+  height: 75vh;
+  /* background-color: rgba(255, 255, 255, 0.185); */
+  z-index: 1;
+}
+
+.equalizer-circle {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  background-color: transparent; 
+  z-index: 1000;
+  margin: 10vh auto;
+  animation: rotateCircle 25s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.equalizer-dot {
+  position: absolute;
+  width: 0.15vw;
+  height: 0.15vw;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.circle-back-2 {
+  position: absolute;
+  width: 42vw;
+  height: 42vw;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 25s linear infinite;
+}
+
+.circle-back-2 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
