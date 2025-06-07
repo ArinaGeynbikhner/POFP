@@ -301,8 +301,8 @@ body.game-page .game {
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 55vw;
-  height: 75vh;
+  width: 45vw;
+  height: 65vh;
   /* background-color: rgba(255, 255, 255, 0.185); */
   z-index: 1;
 }
@@ -359,8 +359,8 @@ body.game-page .game {
 
 .circle-back-1 {
   position: absolute;
-  width: 58vw; 
-  height: 58vw;
+  width: 55vw; 
+  height: 55vw;
   z-index: 250; 
   top: 50%;
   left: 50%;
@@ -494,7 +494,7 @@ body.game-page .game {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: rotateCircleInner 20s linear infinite reverse; /* Обратное вращение, быстрее */
+  animation: rotateCircleInner 20s linear infinite reverse; 
   transform-origin: center;
 }
 
@@ -576,7 +576,7 @@ body.game-page .game {
   top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fade 5s infinite ease-in-out 1s; /* Задержка ~7с/3 */
+  animation: fade 5s infinite ease-in-out 1s; 
 }
 .vectors-2 img {
   width: 100%;
@@ -592,7 +592,7 @@ body.game-page .game {
   top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fade 5s infinite ease-in-out 3s; /* Задержка ~2*7с/3 */ 
+  animation: fade 5s infinite ease-in-out 3s; 
 }
 .vectors-3 img {
   width: 100%;
@@ -605,4 +605,151 @@ body.game-page .game {
   0% { opacity: 0; }
   50% { opacity: 1; } 
   100% { opacity: 0; } 
+}
+
+.macos-vector {
+  position: absolute;
+  width: 58vw;
+  height: 58vw;
+  z-index: 800; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  animation: blink-macos 1.25s step-end forwards; 
+  opacity: 0; 
+}
+.macos-vector img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.steam-vector {
+  position: absolute;
+  width: 58vw;
+  height: 58vw;
+  z-index: 801; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  animation: blink-steam 1.25s step-end forwards 1.25s;
+  opacity: 0; 
+}
+.steam-vector img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.linux-vector {
+  position: absolute;
+  width: 58vw;
+  height: 58vw;
+  z-index: 801; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  animation: blink-linux 1.25s step-end forwards 2.5s; 
+  opacity: 0; 
+}
+.linux-vector img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.windows-vector {
+  position: absolute;
+  width: 58vw;
+  height: 58vw;
+  z-index: 801; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  animation: blink-windows 1.25s step-end forwards 3.75s;
+  opacity: 0; 
+}
+.windows-vector img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.macos {
+  position: absolute;
+  top: -0.6vw;
+  left: 20.5%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100; 
+}
+
+.steam {
+  position: absolute;
+  top: 5.4vw;
+  left: 104%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100; 
+}
+
+.linux {
+  position: absolute;
+  top: 44vw;
+  left: 97%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100;  
+}
+
+.windows {
+  position: absolute;
+  top: 46.8vw;
+  left: 4.5%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100; 
+}
+
+@keyframes blink-macos {
+  0% { opacity: 0; } 
+  25% { opacity: 1; } 
+  50% { opacity: 0; } 
+  100% { opacity: 1; } 
+}
+
+@keyframes blink-steam {
+  0% { opacity: 0; } 
+  25% { opacity: 1; } 
+  50% { opacity: 0; } 
+  100% { opacity: 1; } 
+}
+
+@keyframes blink-linux {
+  0% { opacity: 0; } 
+  25% { opacity: 1; } 
+  50% { opacity: 0; } 
+  100% { opacity: 1; } 
+}
+
+@keyframes blink-windows {
+  0% { opacity: 0; } 
+  25% { opacity: 1; } 
+  50% { opacity: 0; } 
+  100% { opacity: 1; } 
 }
