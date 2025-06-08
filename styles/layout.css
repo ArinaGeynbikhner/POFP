@@ -978,6 +978,7 @@ body.merch-page .merch {
   width: 100%;
   height: auto;
   display: block;
+  opacity: 1;
 }
 
 
@@ -994,7 +995,8 @@ body.merch-page .merch {
 }
 
 .canon.position-center {
-  width: 30vw; 
+  width: 45vw;
+  top: -5%;
 }
 
 .envelope.position-center {
