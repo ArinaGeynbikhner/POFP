@@ -3,11 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const items = document.querySelectorAll('.comics, .canon, .envelope');
   const buttonRight = document.querySelector('.button-right');
   const buttonLeft = document.querySelector('.button-left');
+  const infoProtocol = document.querySelector('.information-protocol');
+  const priceProtocol = document.querySelector('.price-protocol');
+  const numberProtocol = document.querySelector('.number');
+  const nalichieProtocol = document.querySelector('.information-nalichie-protocol');
+  const objectProtocol = document.querySelector('.object-protocol');
+  const choiceButtonDefault = document.querySelector('.choice-button-default');
+  const choiceButtonAlt = document.querySelector('.choice-button-alt');
 
-  if (!carousel || !buttonRight || !buttonLeft) {
-    console.error('Не найдены элементы карусели или кнопки');
-    return;
-  }
 
   function updatePositions() {
     items.forEach(item => {
@@ -21,6 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (position === 'right') {
         item.classList.remove('position-right');
         item.classList.add('position-center');
+        // текст
+        infoProtocol.innerHTML = item.getAttribute('data-info');
+        priceProtocol.innerHTML = item.getAttribute('data-price');
+        numberProtocol.innerHTML = item.getAttribute('data-number');
+        nalichieProtocol.innerHTML = item.getAttribute('data-nalichie');
+        objectProtocol.innerHTML = item.getAttribute('data-object');
+        // управ кнопками
+        if (item.classList.contains('comics') || item.classList.contains('canon')) {
+          choiceButtonDefault.classList.remove('hidden');
+          choiceButtonAlt.classList.add('hidden');
+        } else if (item.classList.contains('envelope')) {
+          choiceButtonDefault.classList.add('hidden');
+          choiceButtonAlt.classList.remove('hidden');
+        }
       } else if (position === 'left') {
         item.classList.remove('position-left');
         item.classList.add('position-right');
@@ -43,6 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (position === 'left') {
         item.classList.remove('position-left');
         item.classList.add('position-center');
+        // текст 
+        infoProtocol.innerHTML = item.getAttribute('data-info');
+        priceProtocol.innerHTML = item.getAttribute('data-price');
+        numberProtocol.innerHTML = item.getAttribute('data-number');
+        nalichieProtocol.innerHTML = item.getAttribute('data-nalichie');
+        objectProtocol.innerHTML = item.getAttribute('data-object');
+        // управ кнопками
+        if (item.classList.contains('comics') || item.classList.contains('canon')) {
+          choiceButtonDefault.classList.remove('hidden');
+          choiceButtonAlt.classList.add('hidden');
+        } else if (item.classList.contains('envelope')) {
+          choiceButtonDefault.classList.add('hidden');
+          choiceButtonAlt.classList.remove('hidden');
+        }
       }
     });
   }
@@ -56,4 +87,21 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Кнопка влево нажата');
     updateReversePositions();
   });
+
+  // инициализация
+  const initialCenterItem = document.querySelector('.position-center');
+  if (initialCenterItem) {
+    infoProtocol.innerHTML = initialCenterItem.getAttribute('data-info');
+    priceProtocol.innerHTML = initialCenterItem.getAttribute('data-price');
+    numberProtocol.innerHTML = initialCenterItem.getAttribute('data-number');
+    nalichieProtocol.innerHTML = initialCenterItem.getAttribute('data-nalichie');
+    objectProtocol.innerHTML = initialCenterItem.getAttribute('data-object');
+    if (initialCenterItem.classList.contains('comics') || initialCenterItem.classList.contains('canon')) {
+      choiceButtonDefault.classList.remove('hidden');
+      choiceButtonAlt.classList.add('hidden');
+    } else if (initialCenterItem.classList.contains('envelope')) {
+      choiceButtonDefault.classList.add('hidden');
+      choiceButtonAlt.classList.remove('hidden');
+    }
+  }
 });

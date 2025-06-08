@@ -929,6 +929,18 @@ body.merch-page .merch {
   display: block;
 }
 
+.choice-button-alt {
+  position: absolute;
+  top: 50vw;
+  left: 93.5%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 10vw; 
+}
+
+.hidden {
+  display: none; 
+}
 .carousel {
   position: relative;
   max-width: 75vw;
@@ -1000,7 +1012,7 @@ body.merch-page .merch {
 }
 
 .envelope.position-center {
-  width: 38vw; 
+  width: 37vw; 
   top: -5%;
 }
 
