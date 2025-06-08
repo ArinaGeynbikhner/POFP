@@ -775,11 +775,13 @@ body.game-page .game {
  background-color: #000;
    color: #fff;
    min-height: 100vh;
+   overflow: hidden;
 }
 
 body.merch-page .merch {
   color: white;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .number {
@@ -914,10 +916,83 @@ body.merch-page .merch {
 }
 
 .choice-button {
-    position: absolute;
-    top: 50vw;
-    left: 136.6%;
-    transform: translateX(-50%);
-    z-index: 100;
-    width: 96vw; 
+  position: absolute;
+  top: 50vw;
+  left: 93.5%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 10vw; 
+}
+.choice-button img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button-right {
+  position: absolute;
+  top: 39vw;
+  left: 73%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 1.3vw; 
+}
+.button-right img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.button-left {
+  position: absolute;
+  top: 39vw;
+  left: 27%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 1.3vw; 
+}
+.button-left img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.comics {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 50vw; 
+}
+.comics img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.canon {
+  position: absolute;
+  top: 45%;
+  left: 23%;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 16vw; 
+}
+.canon img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.envelope {
+  position: absolute;
+  top: 44%;
+  left: 76%;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 14vw; 
+}
+.envelope img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
