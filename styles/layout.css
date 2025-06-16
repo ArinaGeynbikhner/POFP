@@ -134,12 +134,13 @@ body {
     top: 7vw;
     left: 50%;
     transform: translateX(-50%);
+     text-decoration: none;
 }
 
 .pofp {
     position: absolute;
     top: 12vw;
-    left: 6.6%;
+    left: 8%;
     transform: translateX(-50%);
     font-size: 0.8em;
     color: #ffffff;
@@ -285,6 +286,18 @@ body.game-page .game {
   0% {opacity: 0;}
   20% {opacity: 1;}
   100% {opacity: 0;}
+}
+
+.detected {
+  position: absolute;
+  top: 12vw;
+  left: 6%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100;  
 }
 .pofp-low {
   position: absolute;
@@ -844,7 +857,7 @@ body.merch-page .merch {
     margin: 0 auto;
     color: #ffffff;
     z-index: 1;
-    animation: slideLeft 2s ease-in-out forwards 1.5s;
+    animation: slideLeft 2s ease-in-out forwards 0.5s;
 }
 @keyframes slideLeft {
   0% {
@@ -1036,4 +1049,388 @@ body.merch-page .merch {
 .carousel .canon,
 .carousel .envelope {
   transition: transform 0.5s ease, width 0.5s ease, top 0.5s ease, left 0.5s ease, z-index 0s;
+}
+
+/* cart */
+
+.cart-screen {
+   background-color: #000;
+   color: #fff;
+   min-height: 100vh;
+}
+
+body.cart-page .cart {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation-bar-cart {
+    position: relative;
+    max-width: 60vw;
+    width: 100%;
+    height: 12vh;
+    top: 2vw;
+    margin: 0 auto;
+    color: #ffffff;
+    z-index: 1;
+    animation: slideright 2s ease-in-out forwards 0.5s;
+}
+@keyframes slideright {
+  0% {
+  transform: translateX(0);
+  }
+  100% {
+  transform: translateX(62.5%);
+  }
+}
+.cart-1 {
+  position: absolute;
+  top: 12vw;
+  left: 96%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+.position {
+  position: absolute;
+  top: 12vw;
+  left: 4.5%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+.info-text {
+  position: absolute;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+.product {
+  position: absolute;
+  top: 20vw;
+  left: 65%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+.size {
+  position: absolute;
+  top: 22vw;
+  left: 65.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.piece {
+  position: absolute;
+  top: 26vw;
+  left: 64.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.price {
+  position: absolute;
+  top: 28vw;
+  left: 64.8%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100;   
+}
+
+.product-name {
+  position: absolute;
+  top: 20vw;
+  left: 90%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.size-name {
+  position: absolute;
+  top: 22vw;
+  left: 87.4%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.piece-name {
+  position: absolute;
+  top: 26vw;
+  left: 87.1%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.price-name {
+  position: absolute;
+  top: 28vw;
+  left: 88.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.product-2 {
+  position: absolute;
+  top: 38vw;
+  left: 65%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+.size-2 {
+  position: absolute;
+  top: 40vw;
+  left: 65.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.piece-2 {
+  position: absolute;
+  top: 44vw;
+  left: 64.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.price-2 {
+  position: absolute;
+  top: 46vw;
+  left: 64.8%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100;   
+}
+.product-name-2 {
+  position: absolute;
+  top: 38vw;
+  left: 91%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.size-name-2 {
+  position: absolute;
+  top: 40vw;
+  left: 87.4%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.piece-name-2 {
+  position: absolute;
+  top: 44vw;
+  left: 87.1%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.price-name-2 {
+  position: absolute;
+  top: 46vw;
+  left: 88.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.product-3 {
+  position: absolute;
+  top: 56vw;
+  left: 65%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+.size-3 {
+  position: absolute;
+  top: 58vw;
+  left: 65.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.piece-3 {
+  position: absolute;
+  top: 62vw;
+  left: 64.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.price-3 {
+  position: absolute;
+  top: 64vw;
+  left: 64.8%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100;   
+}
+.product-name-3 {
+  position: absolute;
+  top: 56vw;
+  left: 89%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.size-name-3 {
+  position: absolute;
+  top: 58vw;
+  left: 87.4%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.piece-name-3 {
+  position: absolute;
+  top: 62vw;
+  left: 87.1%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.price-name-3 {
+  position: absolute;
+  top: 64vw;
+  left: 88.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.delivery {
+  position: absolute;
+  top: 70vw;
+  left: 66.1%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.taxes {
+  position: absolute;
+  top: 72vw;
+  left: 65.5%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.total {
+  position: absolute;
+  top: 76vw;
+  left: 65.7%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
 }
