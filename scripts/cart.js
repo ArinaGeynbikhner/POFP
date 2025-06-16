@@ -1,24 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const productContainers = document.querySelectorAll('.product-container');
-  const amountElement = document.querySelector('.amount');
+  const choiceButtonDefault = document.querySelector('.choice-button-default');
+  const choiceButtonAlt = document.querySelector('.choice-button-alt');
+  const items = document.querySelectorAll('.comics, .canon, .envelope');
 
-  function updateCart() {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    amountElement.textContent = `[ ${cart.length} ]`;
-
-    productContainers.forEach(container => container.classList.add('hidden'));
-    cart.forEach((item, index) => {
-      if (index < productContainers.length) {
-        const container = productContainers[index];
-        container.classList.remove('hidden');
-        container.querySelector('.product-name').textContent = item.name;
-        container.querySelector('.size-name').textContent = item.size;
-        container.querySelector('.piece-name').textContent = item.quantity;
-        container.querySelector('.price-name').textContent = `${item.price} ₽`;
-      }
-    });
+  function addToCart(item) {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+    const itemData = {
+      name: item.getAttribute('data-object'),
+      size: item.getAttribute('data-info').match(/РАЗМЕР<br>([\s\S]*?)<br>/)[1].trim(),
+      piece: 1,
+      price: item.getAttribute('data-price').match(/(\d+[\s\d]*\₽)/)[1],
+      image: item.getAttribute('data-image')
+    };
+    cartItems.push(itemData);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    alert('Товар добавлен в корзину!');
   }
 
-  // Инициализация
-  updateCart();
+  choiceButtonDefault.addEventListener('click', () => {
+    const centerItem = document.querySelector('.position-center');
+    if (centerItem) {
+      addToCart(centerItem);
+    }
+  });
+
+  choiceButtonAlt.addEventListener('click', () => {
+    const centerItem = document.querySelector('.position-center');
+    if (centerItem) {
+      addToCart(centerItem);
+    }
+  });
 });

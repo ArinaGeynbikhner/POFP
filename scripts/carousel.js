@@ -24,13 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (position === 'right') {
         item.classList.remove('position-right');
         item.classList.add('position-center');
-        // текст
         infoProtocol.innerHTML = item.getAttribute('data-info');
         priceProtocol.innerHTML = item.getAttribute('data-price');
         numberProtocol.innerHTML = item.getAttribute('data-number');
         nalichieProtocol.innerHTML = item.getAttribute('data-nalichie');
         objectProtocol.innerHTML = item.getAttribute('data-object');
-        // управ кнопками
         if (item.classList.contains('comics') || item.classList.contains('canon')) {
           choiceButtonDefault.classList.remove('hidden');
           choiceButtonAlt.classList.add('hidden');
@@ -60,13 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (position === 'left') {
         item.classList.remove('position-left');
         item.classList.add('position-center');
-        // текст 
         infoProtocol.innerHTML = item.getAttribute('data-info');
         priceProtocol.innerHTML = item.getAttribute('data-price');
         numberProtocol.innerHTML = item.getAttribute('data-number');
         nalichieProtocol.innerHTML = item.getAttribute('data-nalichie');
         objectProtocol.innerHTML = item.getAttribute('data-object');
-        // управ кнопками
         if (item.classList.contains('comics') || item.classList.contains('canon')) {
           choiceButtonDefault.classList.remove('hidden');
           choiceButtonAlt.classList.add('hidden');
