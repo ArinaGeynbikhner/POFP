@@ -6,35 +6,40 @@
   <title>First Place of Prayer - official videogame website</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <script src="./scripts/transition.js"></script>
-</body>
+  <script src="./scripts/transition.js" defer></script>
+  <script src="./scripts/model.js" defer></script> <!-- Новый скрипт -->
 </head>
 <body>
   <section class="lobby" id="page">
-        <div class="navigation-bar">
-            <div class="nav-graph"><img src="images/nav-bar.svg" alt=""></div>
-            <div class="logo"><img src="images/logo.svg" alt=""></div>
-            <a href="merch.html" class="merch link-transition">МЕРЧ</a>
-            <a href="game.html" class="game link-transition">ИГРА</a>
-            <a href="cart.html" class="cart link-transition">КОРЗИНА</a>
-        </div>
-        <div class="columntitles">
-            <div class="pofp">FIRST PLACE OF PRAYER</div>
-            <div class="year">ⓒ 2025</div>
-        </div>
-        <div class="text-block">Ты стоишь перед ним. <br>Он давно молчит. <br>
-            Но внутри звучит Эхо. <br>Его память не забыта. <br><br>
-            Вспоминай
-        </div>
-        <div class="nav-era-container">
-        <div class="nav-era"><img src="images/era.svg" alt=""></div>
-        <div class="era-1">1</div>
-        <div class="era-2">2</div>
-        <div class="era-3">3</div>
-        </div>
-        <div class="person"><img src="images/person.png" alt=""></div>
-        <!-- <div class="dots"> <img src="images/dots.svg" alt=""></div> -->
-        
+    <div class="navigation-bar">
+      <div class="nav-graph"><img src="images/nav-bar.svg" alt=""></div>
+      <div class="logo"><img src="images/logo.svg" alt=""></div>
+      <a href="merch.html" class="merch link-transition">МЕРЧ</a>
+      <a href="game.html" class="game link-transition">ИГРА</a>
+      <a href="cart.html" class="cart link-transition">КОРЗИНА</a>
+    </div>
+    <div class="columntitles">
+      <div class="pofp">FIRST PLACE OF PRAYER</div>
+      <div class="year">ⓒ 2025</div>
+    </div>
+    <div class="text-block">Ты стоишь перед ним. <br>Он давно молчит. <br>
+      Но внутри звучит Эхо. <br>Его память не забыта. <br><br>
+      Вспоминай
+    </div>
+    <div class="nav-era-container">
+      <div class="nav-era"><img src="images/era.svg" alt=""></div>
+      <div class="era-1">1</div>
+      <div class="era-2">2</div>
+      <div class="era-3">3</div>
+    </div>
+
+    <!-- Добавляем 3D-компоненты -->
+    <canvas id="three-canvas"></canvas>
+    <div id="fade-overlay"></div>
   </section>
+
+  <!-- Подключение библиотек Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 </body>
 </html>
