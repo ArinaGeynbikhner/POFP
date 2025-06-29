@@ -1720,3 +1720,140 @@ body.cart-page .cart {
     transform: translateX(-50%) translateY(0);
   }
 }
+
+/* Новые стили для анимации изображений */
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  overflow: visible;
+  z-index: 0;
+}
+
+.rect-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.rect-wrapper.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.rect-wrapper.fade {
+  transition: opacity 2s ease;
+  opacity: 0 !important;
+}
+
+.rect {
+  position: relative;
+  background: linear-gradient(135deg, #fff, #bbb);
+  box-shadow:
+    0 0 20px 5px rgba(255, 255, 255, 0.6),
+    0 0 40px 15px rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  z-index: 10;
+  transform-style: flat;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+#rect1 { width: 12vw; height: 18vw; }
+#rect2 { width: 10vw; height: 5vw; }
+#rect3 { width: 12vw; height: 8vw; }
+#rect4 { width: 11vw; height: 15.6vw; }
+#rect5 { width: 11vw; height: 15.5vw; }
+#rect6 { width: 20vw; height: 14.3vw; }
+#rect7 { width: 20vw; height: 20vw; }
+#rect8 { width: 7vw; height: 18vw; }
+#rect9 { width: 10vw; height: 10vw; }
+
+.rect img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+}
+
+.rect.show img {
+  opacity: 1;
+}
+
+.description {
+  position: absolute;
+  width: 12vw;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.description.show {
+  opacity: 1;
+}
+
+#desc1 { top: 30%; left: 30%; }
+#desc2 { top: 60%; left: 65%; }
+#desc3 { top: 25%; left: 60%; }
+#desc4 { top: 50%; left: 30%; }
+#desc5 { top: 30%; left: 60%; }
+#desc6 { top: 70%; left: 40%; }
+#desc7 { top: 20%; left: 40%; }
+#desc8 { top: 35%; left: 55%; }
+#desc9 { top: 60%; left: 50%; }
+
+body.vertical .rect {
+  background: linear-gradient(135deg, #eee, #ccc);
+  box-shadow:
+    0 0 10px 2px rgba(255, 255, 255, 0.3),
+    0 0 20px 7px rgba(255, 255, 255, 0.15);
+}
+
+.connection-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.connection-line {
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 2;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.connection-line.show {
+  opacity: 1;
+}
+
+.fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+  z-index: 1000; /* Ensure it’s above other content */
+}
+
+.fade-overlay.fade-in {
+  opacity: 1;
+}
