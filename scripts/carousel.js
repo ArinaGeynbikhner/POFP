@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const numberProtocol = document.querySelector('.number');
   const nalichieProtocol = document.querySelector('.information-nalichie-protocol');
   const objectProtocol = document.querySelector('.object-protocol');
-  const choiceButtonDefault = document.querySelector('.choice-button-default');
-  const choiceButtonAlt = document.querySelector('.choice-button-alt');
-
 
   function updatePositions() {
     items.forEach(item => {
@@ -29,13 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         numberProtocol.innerHTML = item.getAttribute('data-number');
         nalichieProtocol.innerHTML = item.getAttribute('data-nalichie');
         objectProtocol.innerHTML = item.getAttribute('data-object');
-        if (item.classList.contains('comics') || item.classList.contains('canon')) {
-          choiceButtonDefault.classList.remove('hidden');
-          choiceButtonAlt.classList.add('hidden');
-        } else if (item.classList.contains('envelope')) {
-          choiceButtonDefault.classList.add('hidden');
-          choiceButtonAlt.classList.remove('hidden');
-        }
       } else if (position === 'left') {
         item.classList.remove('position-left');
         item.classList.add('position-right');
@@ -63,13 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         numberProtocol.innerHTML = item.getAttribute('data-number');
         nalichieProtocol.innerHTML = item.getAttribute('data-nalichie');
         objectProtocol.innerHTML = item.getAttribute('data-object');
-        if (item.classList.contains('comics') || item.classList.contains('canon')) {
-          choiceButtonDefault.classList.remove('hidden');
-          choiceButtonAlt.classList.add('hidden');
-        } else if (item.classList.contains('envelope')) {
-          choiceButtonDefault.classList.add('hidden');
-          choiceButtonAlt.classList.remove('hidden');
-        }
       }
     });
   }
@@ -92,12 +75,5 @@ document.addEventListener('DOMContentLoaded', () => {
     numberProtocol.innerHTML = initialCenterItem.getAttribute('data-number');
     nalichieProtocol.innerHTML = initialCenterItem.getAttribute('data-nalichie');
     objectProtocol.innerHTML = initialCenterItem.getAttribute('data-object');
-    if (initialCenterItem.classList.contains('comics') || initialCenterItem.classList.contains('canon')) {
-      choiceButtonDefault.classList.remove('hidden');
-      choiceButtonAlt.classList.add('hidden');
-    } else if (initialCenterItem.classList.contains('envelope')) {
-      choiceButtonDefault.classList.add('hidden');
-      choiceButtonAlt.classList.remove('hidden');
-    }
   }
 });

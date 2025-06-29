@@ -936,19 +936,25 @@ body.merch-page .merch {
   z-index: 100;
   width: 10vw; 
 }
-.choice-button img{
+.choice-button img {
   width: 100%;
   height: auto;
   display: block;
 }
+.choice-button:active {
+  animation: clickScale 0.2s ease-in-out;
+}
 
-.choice-button-alt {
-  position: absolute;
-  top: 50vw;
-  left: 93.5%;
-  transform: translateX(-50%);
-  z-index: 100;
-  width: 10vw; 
+@keyframes clickScale {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
 }
 
 .hidden {
@@ -1525,6 +1531,7 @@ body.cart-page .cart {
   top: 89.5%;
   left: 92.5%;
   transform: translateX(-50%);
+  animation: clickScale 0.2s ease-in-out;
 }
 
 .buy-button img {
@@ -1538,11 +1545,9 @@ body.cart-page .cart {
 .buy-button:hover {
   transform: translateX(-50%) scale(1.1); 
 }
-.buy-button:active {
-  transform: translateX(-50%) scale(0.95); 
-}
 
-/* Новые стили для 3D-компонентов */
+
+/* model */
 #three-canvas {
   position: absolute;
   top: 0;
@@ -1563,4 +1568,155 @@ body.cart-page .cart {
   pointer-events: none;
   z-index: 10;
   transition: opacity 0.5s ease;
+}
+
+/* 404 */
+
+.nf-screen{
+   background-color: #000;
+   color: #fff;
+   min-height: 100vh;
+}
+.nf-img{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 50vw; 
+  animation: levitate 3s ease-in-out infinite;
+}
+.nf-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.nf-img-2{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 50vw; 
+  animation: fadeInOut 3s ease-in-out infinite;
+  animation: levitate 3s ease-in-out infinite;
+}
+.nf-img-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.sboy {
+  position: absolute;
+  top: 10vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  z-index: 100; 
+  animation: pulseglow 2s ease-in-out infinite;
+}
+.comment {
+  position: absolute;
+  top: 57vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  z-index: 100; 
+  animation: pulseglow 2s ease-in-out infinite;
+}
+
+.gradient {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 125vw; 
+  animation: pulseOpacity 2.5s ease-in-out infinite;
+}
+.gradient img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cross {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 40vw; 
+}
+.cross img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cross-2 {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 40vw; 
+}
+.cross-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@keyframes pulseglow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulseOpacity {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-30px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
 }

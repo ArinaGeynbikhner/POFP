@@ -60,9 +60,16 @@
   <div class="product-2-img"><img src="" alt="" data-image="images/envelope.png"></div>
   <div class="product-3-img"><img src="" alt="" data-image="images/canon.png"></div>
 
-   <div class="delivery-amount">0 ₽</div>
+  <div class="delivery-amount">0 ₽</div>
   <div class="taxes-amount">ВКЛЮЧЕНЫ</div>
   <div class="total-amount">3200 ₽</div>
-  <div class="buy-button"><img src="images/buy-button.svg" alt=""></div>
+  <div class="buy-button"><img src="images/buy-button.svg" alt="" onclick="window.location.href='nf.html'"></div>
+
+  <script>
+    document.querySelector('.buy-button img').addEventListener('click', function() {
+      localStorage.removeItem('cartItems'); 
+      window.location.href = 'nf.html'; 
+    });
+  </script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const choiceButtonDefault = document.querySelector('.choice-button-default');
-  const choiceButtonAlt = document.querySelector('.choice-button-alt');
+  const choiceButton = document.querySelector('.choice-button');
   const items = document.querySelectorAll('.comics, .canon, .envelope');
 
   function addToCart(item) {
@@ -14,17 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     cartItems.push(itemData);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    alert('Товар добавлен в корзину!');
   }
 
-  choiceButtonDefault.addEventListener('click', () => {
-    const centerItem = document.querySelector('.position-center');
-    if (centerItem) {
-      addToCart(centerItem);
-    }
-  });
-
-  choiceButtonAlt.addEventListener('click', () => {
+  choiceButton.addEventListener('click', () => {
     const centerItem = document.querySelector('.position-center');
     if (centerItem) {
       addToCart(centerItem);

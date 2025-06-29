@@ -11,8 +11,8 @@ const fadeOverlay = document.getElementById('fade-overlay');
 let fadeStarted = false;
 
 const maxApproachZ = 1.9;
-const pulseStartThreshold = 0.25 * maxApproachZ;
-const pulseEndThreshold = 0.60 * maxApproachZ;
+const pulseStartThreshold = 0.40 * maxApproachZ;
+const pulseEndThreshold = 0.50 * maxApproachZ;
 const preExplosionPulseThreshold = 0.8 * maxApproachZ;
 const explosionThreshold = maxApproachZ;
 

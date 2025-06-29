@@ -93,12 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
   if (totalAmountElement) {
     totalAmountElement.textContent = `${totalAmount} ₽`;
   }
-
-  // обработчик клика 
-  const buyButton = document.querySelector('.button-buy');
-  if (buyButton) {
-    buyButton.addEventListener('click', () => {
-      window.location.href = '404.html';
-    });
-  }
 });
