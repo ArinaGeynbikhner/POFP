@@ -1524,7 +1524,7 @@ body.cart-page .cart {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* Подложка под другие элементы */
+  z-index: 0; 
 }
 
 #fade-overlay {
@@ -1691,7 +1691,8 @@ body.cart-page .cart {
   }
 }
 
-/* Новые стили для анимации изображений */
+/* era */
+
 .scene {
   position: relative;
   width: 100vw;
@@ -1821,7 +1822,7 @@ body.vertical .rect {
   opacity: 0;
   pointer-events: none;
   transition: opacity 1s ease-in-out;
-  z-index: 1000; /* Ensure it’s above other content */
+  z-index: 1000; 
 }
 
 .fade-overlay.fade-in {
@@ -1842,4 +1843,18 @@ body.vertical .rect {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.scrollpls {
+    position: absolute;
+    top: 12vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    z-index: 100;
+    animation: pulseOpacity 2.5s ease-in-out infinite;
+    animation: pulseglow 2s ease-in-out infinite;
 }
