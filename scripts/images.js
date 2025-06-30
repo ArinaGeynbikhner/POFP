@@ -74,7 +74,7 @@ function updateScene() {
   }
 
   wrappers.forEach((wrapper, i) => {
-    if (!wrapper) return; // Skip if wrapper is null
+    if (!wrapper) return; 
     const delays = i * 0.1;
     const localProgress = Math.min(Math.max((scrollProgress - delays) / 0.3, 0), 1);
     const eased = easeInOut(localProgress);
@@ -117,12 +117,11 @@ function updateScene() {
     if (localProgress >= 1.0) {
       setTimeout(() => {
         wrapper.classList.add('fade');
-        // Trigger fade overlay and redirect for wrapper9
         if (i === 8 && wrapper.classList.contains('fade') && fadeOverlay) {
           fadeOverlay.classList.add('fade-in');
           setTimeout(() => {
             window.location.href = 'index.html';
-          }, 1000); // Match the CSS transition duration
+          }, 1000); 
         }
       }, 100);
     } else {
