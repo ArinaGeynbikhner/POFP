@@ -1,0 +1,1077 @@
+/* Мобильные устройства (375px–767px, вертикальная ориентация) */
+@media screen and (min-width: 375px) and (max-width: 767px) and (orientation: portrait) {
+
+  .navigation-bar {
+    position: relative;
+    max-width: 100vw;
+    width: 100%;
+    height: 12%;
+    top: 2vw;
+    margin: 0 auto;
+    color: #ffffff;
+    z-index: 100;
+  }
+
+  .nav-graph {
+    position: absolute;
+    top: 4vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 45vw;
+  }
+
+  .nav-graph img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+    top: 8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 90vw;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .merch, .game, .cart {
+    position: absolute;
+    font-size: 3.5vw;
+    color: #888888;
+    text-align: left;
+    font-weight: 700;
+    z-index: 100;
+    white-space: nowrap;
+  }
+
+  .merch {
+    top: 3vw;
+    left: 20%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .game {
+    top: 3vw;
+    left: 80%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .cart {
+    top: 26vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+  }
+
+  .pofp {
+    position: absolute;
+    top: 37vw;
+    left: 25%;
+    opacity: 0;
+  }
+
+  .year {
+    position: absolute;
+    top: 37vw;
+    left: 87%;
+    opacity: 0;
+  }
+
+  .pofp-mobile {
+    position: absolute;
+    top: 37vw;
+    left: 11%;
+    opacity: 1;
+  }
+
+  .year-mobile {
+    position: absolute;
+    top: 37vw;
+    left: 87%;
+    opacity: 1;
+  }
+  .text-block {
+    opacity: 0;
+  }
+
+  /* merch */
+
+  .navigation-bar-merch {
+    position: relative;
+    max-width: 95vw;
+    width: 100%;
+    height: 30vw;
+    top: 2vw;
+    margin: 0 auto;
+    color: #ffffff;
+    z-index: 1;
+    animation: slideLeft 2s ease-in-out forwards 0.5s;
+}
+@keyframes slideLeft {
+  0% {
+  transform: translateX(0);
+  }
+  100% {
+  transform: translateX(-0%);
+  }
+}
+
+.number {
+  position: absolute;
+  top: 38vw;
+  left: 9%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100;
+}
+
+.amount {
+  position: absolute;
+  top: 38vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100;
+}
+
+.store {
+  position: absolute;
+  top: 38vw;
+  left: 89%;
+}
+.logo-long {
+opacity: 0;
+}
+.information-protocol {
+  position: absolute;
+  top: 90vw;
+  left: 20%;
+  opacity: 0;
+}
+.information-nalichie-protocol{
+  position: absolute;
+  top: 130vw;
+  left: 79%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100;
+}
+
+.warning {
+  font-size: 0.1em;
+opacity: 0;
+}
+
+.object-protocol {
+  position: absolute;
+  top: 48vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+}
+
+.price-protocol {
+  position: absolute;
+  top: 120vw;
+  left: 74%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100;
+}
+
+.choice-button {
+  position: absolute;
+  top: 125vw;
+  left: 80%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 35vw; 
+}
+.carousel {
+  max-width: 90vw;
+  width: 100%;
+  height: 55vh;
+  top: 30vw;
+}
+
+.button-right {
+  position: absolute;
+  top: 30%;
+  left: 89%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 4vw; 
+}
+
+.button-left {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 4.5vw; 
+}
+
+.position-center {
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+
+.comics.position-center {
+  width: 75vw; 
+  top: -1%;
+}
+
+.canon.position-center {
+  width: 60vw;
+  top: -1%;
+}
+
+.envelope.position-center {
+  width: 60vw; 
+  top: -2%;
+}
+.pofp-low {
+  position: absolute;
+  bottom: 3vw;
+  left: 28%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100;
+}
+.year-low {
+  position: absolute;
+  bottom: 3vw;
+  left: 87%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100;  
+}
+/* cart  */
+
+.navigation-bar-cart {
+    position: relative;
+    max-width: 93vw;
+    width: 100%;
+    height: 12vh;
+}
+@keyframes slideright {
+  0% {
+  transform: translateX(0);
+  }
+  100% {
+  transform: translateX(0%);
+  }
+}
+.cart-1 {
+  position: absolute;
+  top: 39vw;
+  left: 89%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+.position {
+  position: absolute;
+  top: 39vw;
+  left: 15%; 
+}
+.info-text {
+  position: absolute;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+.product {
+  position: absolute;
+  top: 60vw;
+  left: 59%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+.size {
+  position: absolute;
+  top: 65vw;
+  left: 60%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.piece {
+  position: absolute;
+  top: 70vw;
+  left: 56%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.price {
+  position: absolute;
+  top: 75vw;
+  left: 58%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100;   
+}
+
+.product-name {
+  position: absolute;
+  top: 60vw;
+  left: 80%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.size-name {
+  position: absolute;
+  top: 65vw;
+  left: 80%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.piece-name {
+  position: absolute;
+  top: 70vw;
+  left: 74.5%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.price-name {
+  position: absolute;
+  top: 75vw;
+  left: 79%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.product-2 {
+  position: absolute;
+  top: 85vw;
+  left: 58.9%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+.size-2 {
+  position: absolute;
+  top: 90vw;
+  left: 60%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.piece-2 {
+  position: absolute;
+  top: 95vw;
+  left: 56%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.price-2 {
+  position: absolute;
+  top: 100vw;
+  left: 58%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100;   
+}
+.product-name-2 {
+  position: absolute;
+  top: 85vw;
+  left: 80%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.size-name-2 {
+  position: absolute;
+  top: 90vw;
+  left: 81%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.piece-name-2 {
+  position: absolute;
+  top: 95vw;
+  left: 74%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.price-name-2 {
+  position: absolute;
+  top: 100vw;
+  left: 78.5%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.product-3 {
+  position: absolute;
+  top: 110vw;
+  left: 59%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+.size-3 {
+  position: absolute;
+  top: 115vw;
+  left: 60%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.piece-3 {
+  position: absolute;
+  top: 120vw;
+  left: 56%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.price-3 {
+  position: absolute;
+  top: 125vw;
+  left: 58%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100;   
+}
+.product-name-3 {
+  position: absolute;
+  top: 110vw;
+  left: 82%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.size-name-3 {
+  position: absolute;
+  top: 115vw;
+  left: 80%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.piece-name-3 {
+  position: absolute;
+  top: 120vw;
+  left: 75%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.price-name-3 {
+  position: absolute;
+  top: 125vw;
+  left: 79%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.delivery {
+  position: absolute;
+  top: 140vw;
+  left: 63%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.taxes {
+  position: absolute;
+  top: 145vw;
+  left: 61%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+
+.total {
+opacity: 0;
+}
+
+.product-img {
+  position: absolute;
+  z-index: 1000;
+  width: 35vw;
+  top: 32%;
+  left: 20%;
+  transform: translateX(-50%);
+
+}
+
+.product-2-img {
+  position: absolute;
+  z-index: 1000;
+  width: 23vw;
+  top: 45%;
+  left: 19%;
+  transform: translateX(-50%) rotate(90deg);
+
+}
+
+.product-3-img {
+  position: absolute;
+  z-index: 1000;
+  width: 30vw;
+  top: 60%;
+  left: 19%;
+  transform: translateX(-50%);
+
+}
+.product-3-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+}
+
+.delivery-amount {
+  position: absolute;
+  top: 140vw;
+  left: 76.5%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.taxes-amount {
+  position: absolute;
+  top: 145vw;
+  left: 84%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.total-amount {
+  position: absolute;
+  top: 155vw;
+  left: 80%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  z-index: 100; 
+}
+.buy-button {
+  position: absolute;
+  z-index: 1000;
+  width: 30vw;
+  top: 86.5%;
+  left: 79%;
+  transform: translateX(-50%);
+  animation: clickScale 0.2s ease-in-out;
+}
+
+/* nf */
+
+.nf-img{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 80vw; 
+  animation: levitate 3s ease-in-out infinite;
+}
+.nf-img-2{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 80vw; 
+  animation: fadeInOut 3s ease-in-out infinite;
+  animation: levitate 3s ease-in-out infinite;
+}
+.sboy {
+  position: absolute;
+  top: 30vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  z-index: 100; 
+  animation: pulseglow 2s ease-in-out infinite;
+}
+.comment {
+  position: absolute;
+  top: 135vw;
+  left: 50%;
+  width: 95vw;
+  transform: translateX(-50%);
+  font-size: 0.6em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  z-index: 100; 
+  animation: pulseglow 2s ease-in-out infinite;
+}
+
+.gradient {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 0vw; 
+}
+
+.cross {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 90vw; 
+}
+
+.cross-2 {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 90vw; 
+}
+
+/* game */
+
+.circle-composition {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 60vh;
+  z-index: 1;
+}
+.equalizer-circle {
+  position: absolute;
+  width: 95vw;
+  height: 95vw;
+}
+
+.circle-back-2 {
+  position: absolute;
+  width: 42vw;
+  height: 42vw;
+  z-index: 500; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 25s linear infinite;
+}
+
+.circle-back-2 img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  display: block;
+}
+
+.circle-back-1 {
+  position: absolute;
+  width: 70vw; 
+  height: 70vw;
+  z-index: 250; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spinBack 25s linear infinite; 
+}
+
+.circle-back-3 {
+  position: absolute;
+  width: 60vw; 
+  height: 60vw;
+  z-index: 100; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  animation: spinBack3 25s linear infinite; }
+
+.circle-back-center {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  z-index: 50; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spincenter 10s linear infinite;
+}
+
+.circle-back-center-1 {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  z-index: 30; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spincenter-1 10s linear infinite;
+}
+.circle-back-center-1 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.equalizer-circle-inner {
+  position: absolute;
+  width: 28vw; 
+  height: 28vw;
+  background-color: transparent;
+  z-index: 750; 
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateCircleInner 20s linear infinite reverse; 
+  transform-origin: center;
+}
+
+.equalizer-circle-middle {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  background-color: transparent;
+  z-index: 550; 
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateCircleMiddle 25s linear infinite; 
+  transform-origin: center;
+}
+
+.circle-back-center-2 {
+  opacity: 0;
+}
+
+.circle-sun {
+  position: absolute;
+  width: 42vw;
+  height: 42vw;
+  z-index: 600; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  animation: rotateCircleInner 20s linear infinite reverse;
+}
+
+.macos-vector {
+  position: absolute;
+  width: 120vw;
+  height: 120vw;
+  z-index: 800; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  animation: blink-macos 1.25s step-end forwards; 
+  opacity: 0; 
+}
+.macos-vector img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.steam-vector {
+  position: absolute;
+  width: 120vw;
+  height: 120vw;
+  z-index: 801; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  animation: blink-steam 1.25s step-end forwards 1.25s;
+  opacity: 0;
+  display: none; 
+}
+
+.linux-vector {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 801; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  animation: blink-linux 1.25s step-end forwards 2.5s; 
+  opacity: 0; 
+}
+.linux-vector img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.windows-vector {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 801; 
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  animation: blink-windows 1.25s step-end forwards 3.75s;
+  opacity: 0; 
+}
+.windows-vector img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.macos {
+  position: absolute;
+  top: -0.6vw;
+  left: 20.5%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100; 
+}
+
+.steam {
+  position: absolute;
+  top: 5.4vw;
+  left: 104%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100; 
+}
+
+.linux {
+  position: absolute;
+  top: 44vw;
+  left: 97%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100;  
+}
+
+.windows {
+  position: absolute;
+  top: 46.8vw;
+  left: 4.5%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 400;
+  z-index: 100; 
+}
+.inicialisation {
+    position: absolute;
+    top: 36vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    z-index: 100; 
+}
+
+.detected {
+  position: absolute;
+  top: 12vw;
+  left: 6%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100;
+  opacity: 0;  
+}
+.description {
+  position: absolute;
+  width: 35vw;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 20;
+}
+}
+/* Планшеты (вертикальная ориентация, ширина от 768px до 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+  }
+
+  /* Десктопы (ширина ≥ 1440px) */
+@media screen and (min-width: 1440px) {
+
+  }
