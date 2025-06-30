@@ -34,9 +34,26 @@
     transform: translateX(-50%);
     z-index: 100;
     width: 90vw;
+    opacity: 0;
   }
 
   .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+    .logo-mobile {
+    position: absolute;
+    top: 8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 90vw;
+    opacity: 1;
+  }
+
+  .logo-mobile img {
     width: 100%;
     height: auto;
     display: block;
@@ -1036,7 +1053,7 @@ opacity: 0;
 .inicialisation {
     position: absolute;
     top: 36vw;
-    left: 50%;
+    left: 16%;
     transform: translateX(-50%);
     font-size: 0.8em;
     color: #ffffff;
