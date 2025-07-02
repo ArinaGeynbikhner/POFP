@@ -55,6 +55,7 @@
     width: 100%;
     height: auto;
     display: block;
+    opacity: 0;
   }
 
     .logo-mobile {
@@ -1096,6 +1097,885 @@ opacity: 0;
   pointer-events: none;
   z-index: 20;
 }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1019px) and (orientation: portrait) {
+
+    .scrollpls {
+    position: absolute;
+    top: 127vw;
+    left: 50%;
+    font-size: 1em;
+}
+
+  .navigation-bar {
+    position: relative;
+    max-width: 100vw;
+    width: 100%;
+    height: 12%;
+    top: 2.5vw;
+    margin: 0 auto;
+    color: #ffffff;
+    z-index: 100;
+  }
+
+  .nav-graph {
+    position: absolute;
+    top: 4vw;
+    left: 50%;
+    width: 30vw;
+  }
+
+  .logo {
+    position: absolute;
+    top: 8vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 90vw;
+    opacity: 0;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+  }
+
+    .logo-mobile {
+    position: absolute;
+    top: 6vw;
+    left: 50%;
+    width: 80vw;
+    opacity: 1;
+  }
+
+  .logo-mobile img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .merch, .game, .cart {
+    position: absolute;
+    font-size: 2.5vw;
+  }
+
+  .merch {
+    top: 3vw;
+    left: 30%;
+  }
+
+  .game {
+    top: 3vw;
+    left: 70%;
+  }
+
+  .cart {
+    top: 19vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+  }
+
+  .pofp {
+    position: absolute;
+    top: 37vw;
+    left: 25%;
+    opacity: 0;
+  }
+
+  .year {
+    position: absolute;
+    top: 37vw;
+    left: 87%;
+    opacity: 0;
+  }
+
+  .pofp-mobile {
+    position: absolute;
+    top: 30vw;
+    left: 11%;
+    opacity: 1;
+    font-size: 2vw;
+  }
+
+  .year-mobile {
+    position: absolute;
+    top: 30vw;
+    left: 87%;
+    opacity: 1;
+    font-size: 2vw;
+  }
+  .text-block {
+    opacity: 0;
+  }
+
+  /* merch */
+
+  .navigation-bar-merch {
+    position: relative;
+    max-width: 100vw;
+    width: 100%;
+    height: 30vw;
+    top: 2vw;
+    margin: 0 auto;
+    color: #ffffff;
+    z-index: 1;
+    animation: slideLeft 2s ease-in-out forwards 0.5s;
+}
+@keyframes slideLeft {
+  0% {
+  transform: translateX(0);
+  }
+  100% {
+  transform: translateX(-0%);
+  }
+}
+
+.number {
+  position: absolute;
+  top: 30vw;
+  left: 9%;
+  font-size: 1em;
+}
+
+.amount {
+  position: absolute;
+  top: 30vw;
+  left: 50%;
+  font-size: 1em;
+}
+
+.store {
+  position: absolute;
+  top: 30vw;
+  left: 89%;
+  font-size: 1em;
+}
+
+.logo-long {
+opacity: 0;
+}
+
+.information-protocol {
+  position: absolute;
+  top: 90vw;
+  left: 20%;
+  opacity: 0;
+}
+
+.information-nalichie-protocol{
+  position: absolute;
+  top: 95vw;
+  left: 87%;
+  transform: translateX(-50%);
+  font-size: 1em;
+}
+
+.warning {
+  font-size: 0.1em;
+  opacity: 0;
+}
+
+.object-protocol {
+  position: absolute;
+  top: 35vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+}
+
+.price-protocol {
+  position: absolute;
+  top: 102vw;
+  left: 84.5%;
+  transform: translateX(-50%);
+  font-size: 1em;
+}
+
+.choice-button {
+  position: absolute;
+  top: 79vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 25vw; 
+}
+.carousel {
+  max-width: 90vw;
+  width: 100%;
+  height: 55vh;
+  top: 8vw;
+}
+
+.button-right {
+  position: absolute;
+  top: 30%;
+  left: 89%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 4vw; 
+}
+
+.button-left {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 4.5vw; 
+}
+
+.position-center {
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.comics.position-center {
+  width: 75vw; 
+  top: -1%;
+}
+
+.canon.position-center {
+  width: 50vw;
+  top: 5%;
+}
+
+.envelope.position-center {
+  width: 40vw; 
+  top: 5%;
+}
+.pofp-low {
+  position: absolute;
+  bottom: 3vw;
+  left: 18%;
+  transform: translateX(-50%);
+  font-size: 1em;
+}
+
+.year-low {
+  position: absolute;
+  bottom: 3vw;
+  left: 91%;
+  transform: translateX(-50%);
+  font-size: 1em; 
+}
+
+/* cart  */
+
+.navigation-bar-cart {
+    position: relative;
+    max-width: 93vw;
+    width: 100%;
+    height: 12vh;
+}
+@keyframes slideright {
+  0% {
+  transform: translateX(0);
+  }
+  100% {
+  transform: translateX(0%);
+  }
+}
+.cart-1 {
+  position: absolute;
+  top: 30vw;
+  left: 92%;
+  transform: translateX(-50%);
+  font-size: 1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+.position {
+  position: absolute;
+  top: 30vw;
+  left: 11%; 
+  font-size: 1em;
+}
+.info-text {
+  position: absolute;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+.product {
+  position: absolute;
+  top: 40vw;
+  left: 65%;
+}
+.size {
+  position: absolute;
+  top: 43vw;
+  left: 65.7%;
+}
+
+.piece {
+  position: absolute;
+  top: 46vw;
+  left: 63.7%;
+}
+
+.price {
+  position: absolute;
+  top: 49vw;
+  left: 64.6%;   
+}
+
+.product-name {
+  position: absolute;
+  top: 40vw;
+  left: 89%;
+}
+
+.size-name {
+  position: absolute;
+  top: 43vw;
+  left: 88%; 
+}
+
+.piece-name {
+  position: absolute;
+  top: 46vw;
+  left: 85.5%;
+}
+
+.price-name {
+  position: absolute;
+  top: 49vw;
+  left: 88%;
+}
+
+.product-2 {
+  position: absolute;
+  top: 55vw;
+  left: 64.9%;
+}
+.size-2 {
+  position: absolute;
+  top: 58vw;
+  left: 65.6%;
+}
+
+.piece-2 {
+  position: absolute;
+  top: 61vw;
+  left: 63.6%;
+}
+
+.price-2 {
+  position: absolute;
+  top: 64vw;
+  left: 64.6%;  
+}
+.product-name-2 {
+  position: absolute;
+  top: 55vw;
+  left: 89%;
+}
+
+.size-name-2 {
+  position: absolute;
+  top: 58vw;
+  left: 89%;
+}
+
+.piece-name-2 {
+  position: absolute;
+  top: 61vw;
+  left: 85.6%;
+}
+
+.price-name-2 {
+  position: absolute;
+  top: 64vw;
+  left: 87.9%;
+}
+
+.product-3 {
+  position: absolute;
+  top: 70vw;
+  left: 65%;
+}
+.size-3 {
+  position: absolute;
+  top: 73vw;
+  left: 65.6%;
+}
+
+.piece-3 {
+  position: absolute;
+  top: 76vw;
+  left: 63.5%;
+}
+
+.price-3 {
+  position: absolute;
+  top: 79vw;
+  left: 64.5%;   
+}
+.product-name-3 {
+  position: absolute;
+  top: 70vw;
+  left: 89.4%;
+}
+
+.size-name-3 {
+  position: absolute;
+  top: 73vw;
+  left: 88.3%;
+}
+
+.piece-name-3 {
+  position: absolute;
+  top: 76vw;
+  left: 85.4%; 
+}
+
+.price-name-3 {
+  position: absolute;
+  top: 79vw;
+  left: 88%;
+}
+
+.delivery {
+  position: absolute;
+  top: 90vw;
+  left: 67%;
+}
+
+.taxes {
+  position: absolute;
+  top: 93vw;
+  left: 66%;
+}
+
+.total {
+opacity: 1;
+top: 104vw;
+left: 66.5%;
+}
+
+.product-img {
+  position: absolute;
+  z-index: 1000;
+  width: 30vw;
+  top: 28%;
+  left: 20%;
+  transform: translateX(-50%);
+
+}
+
+.product-2-img {
+  position: absolute;
+  z-index: 1000;
+  width: 21vw;
+  top: 43%;
+  left: 20%;
+  transform: translateX(-50%) rotate(90deg);
+
+}
+
+.product-3-img {
+  position: absolute;
+  z-index: 1000;
+  width: 28vw;
+  top: 61%;
+  left: 20%;
+  transform: translateX(-50%);
+
+}
+.product-3-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+}
+
+.delivery-amount {
+  position: absolute;
+  top: 90vw;
+  left: 86.3%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+
+.taxes-amount {
+  position: absolute;
+  top: 93vw;
+  left: 90%;
+}
+
+.total-amount {
+  position: absolute;
+  top: 104.5vw;
+  left: 88.5%;
+}
+.buy-button {
+  position: absolute;
+  z-index: 1000;
+  width: 15vw;
+  top: 78%;
+  left: 88%;
+}
+
+/* nf */
+
+.nf-img{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 80vw; 
+  animation: levitate 3s ease-in-out infinite;
+}
+.nf-img-2{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 80vw; 
+  animation: fadeInOut 3s ease-in-out infinite;
+  animation: levitate 3s ease-in-out infinite;
+}
+.sboy {
+  position: absolute;
+  top: 30vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  z-index: 100; 
+  animation: pulseglow 2s ease-in-out infinite;
+}
+.comment {
+  position: absolute;
+  top: 135vw;
+  left: 50%;
+  width: 95vw;
+  transform: translateX(-50%);
+  font-size: 0.6em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  z-index: 100; 
+  animation: pulseglow 2s ease-in-out infinite;
+}
+
+.gradient {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 0vw; 
+}
+
+.cross {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 90vw; 
+}
+
+.cross-2 {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  width: 90vw; 
+}
+
+/* game */
+
+.inicialisation {
+  position: absolute;
+  top: 30vw;
+  left: 11%;
+  transform: translateX(-50%);
+  font-size: 1em;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+  z-index: 100; 
+}
+ 
+.detected {
+opacity: 0; 
+}
+
+.equalizer-circle {
+  position: absolute;
+  width: 61vw;
+  height: 61vw;
+  background-color: transparent;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateCircle 25s linear infinite;
+  transform-origin: center;
+}
+
+.equalizer-dot {
+  position: absolute;
+  width: 0.2vw; 
+  height: 0.2vw; 
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.circle-back-2 {
+  position: absolute;
+  width: 42vw;
+  height: 42vw;
+  z-index: 500; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 25s linear infinite;
+}
+
+.circle-back-2 img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  display: block;
+}
+
+.circle-back-1 {
+  position: absolute;
+  width: 85vw; 
+  height: 85vw;
+  z-index: 250; 
+  top: 50%;
+  left: 50%;
+}
+
+.circle-back-3 {
+  position: absolute;
+  width: 32vw; 
+  height: 32vw;
+  z-index: 100; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  animation: spinBack3 25s linear infinite; 
+}
+
+.circle-back-center {
+  position: absolute;
+  width: 32vw;
+  height: 32vw;
+  z-index: 50; 
+  top: 50%;
+  left: 50%;
+}
+
+.circle-back-center-1 {
+  position: absolute;
+  width: 18vw;
+  height: 18vw;
+  z-index: 30; 
+  top: 50%;
+  left: 50%;
+}
+
+.equalizer-circle-inner {
+  position: absolute;
+  width: 19.5vw; 
+  height: 19.5vw;
+  background-color: transparent;
+  z-index: 750; 
+  top: 45%;
+  left: 50%;
+}
+
+.equalizer-circle-middle {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  background-color: transparent;
+  z-index: 550; 
+  top: 44%;
+  left: 50%;
+}
+
+.circle-back-center-2 {
+  position: absolute;
+  width: 18.5vw;
+  height: 18.5vw;
+  z-index: 20; 
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.circle-sun {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  z-index: 600; 
+  top: 50%;
+  left: 50%;
+}
+
+.vectors-1 {
+  position: absolute;
+  width: 62vw;
+  height: 62vw;
+  z-index: 680; 
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade 5s infinite ease-in-out;
+}
+
+.vectors-2 {
+  position: absolute;
+  width: 62vw;
+  height: 62vw;
+  z-index: 690; 
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade 5s infinite ease-in-out 1s; 
+}
+
+.vectors-3 {
+  position: absolute;
+  width: 62vw;
+  height: 62vw;
+  z-index: 700; 
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade 5s infinite ease-in-out 3s; 
+}
+
+.macos-vector {
+  position: absolute;
+  width: 85vw;
+  height: 85vw;
+  z-index: 800; 
+  top: 45%;
+  left: 55%;
+}
+
+.steam-vector {
+  position: absolute;
+  width: 85vw;
+  height: 85vw;
+  z-index: 801; 
+  top: 48%;
+  left: 55%; 
+}
+
+.linux-vector {
+  position: absolute;
+  width: 85vw;
+  height: 85vw;
+  z-index: 801; 
+  top: 48%;
+  left: 60%;
+}
+
+.windows-vector {
+  position: absolute;
+  width: 85vw;
+  height: 85vw;
+  z-index: 801; 
+  top: 48%;
+  left: 55%;
+}
+
+.macos {
+opacity: 0;
+}
+
+.steam {
+opacity: 0;
+}
+
+.linux {
+opacity: 0; 
+}
+
+.windows {
+opacity: 0;
+}
+
+/* nf */
+
+.nf-img{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 65vw; 
+}
+
+.nf-img-2{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 65vw; 
+}
+
+.sboy {
+  position: absolute;
+  top: 28vw;
+  left: 50%;
+  font-size: 1em;
+}
+.comment {
+  position: absolute;
+  top: 95vw;
+  left: 50%;
+  font-size: 1em;
+}
+
+.cross {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  width: 75vw; 
+}
+
+.cross-2 {
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  width: 75vw; 
+}
+
+.description {
+  width: 20vw;
+}
+
 }
 
 @media screen and (min-width: 1020px) and (max-width: 1439px) {
