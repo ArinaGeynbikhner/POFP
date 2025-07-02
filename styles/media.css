@@ -3,7 +3,7 @@
 
     .scrollpls {
     position: absolute;
-    top: 168vw;
+    top: 38svw;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.8em;
@@ -196,14 +196,14 @@ opacity: 0;
 }
 .information-protocol {
   position: absolute;
-  top: 90vw;
+  top: 130vw;
   left: 20%;
-  opacity: 0;
+  opacity: 1;
 }
 .information-nalichie-protocol{
   position: absolute;
-  top: 130vw;
-  left: 79%;
+  top: 150vw;
+  left: 81%;
   transform: translateX(-50%);
   font-size: 0.8em;
   color: #ffffff;
@@ -227,8 +227,8 @@ opacity: 0;
 
 .price-protocol {
   position: absolute;
-  top: 120vw;
-  left: 74%;
+  top: 140vw;
+  left: 77%;
   transform: translateX(-50%);
   font-size: 0.8em;
   color: #ffffff;
@@ -239,8 +239,8 @@ opacity: 0;
 
 .choice-button {
   position: absolute;
-  top: 125vw;
-  left: 80%;
+  top: 158vw;
+  left: 77%;
   transform: translateX(-50%);
   z-index: 100;
   width: 35vw; 
@@ -254,7 +254,7 @@ opacity: 0;
 
 .button-right {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 89%;
   transform: translateX(-50%);
   z-index: 150;
@@ -263,7 +263,7 @@ opacity: 0;
 
 .button-left {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 12%;
   transform: translateX(-50%);
   z-index: 150;
@@ -292,10 +292,27 @@ opacity: 0;
   width: 60vw; 
   top: -2%;
 }
+
+.position-left {
+  top: 20%;
+  left: 14%;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 16vw; 
+}
+
+.position-right {
+  top: 23%;
+  left: 85%;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 14vw; 
+}
+
 .pofp-low {
   position: absolute;
-  bottom: 3vw;
-  left: 28%;
+  bottom: 4vw;
+  left: 26%;
   transform: translateX(-50%);
   font-size: 0.8em;
   color: #ffffff;
@@ -305,7 +322,7 @@ opacity: 0;
 }
 .year-low {
   position: absolute;
-  bottom: 3vw;
+  bottom: 4vw;
   left: 87%;
   transform: translateX(-50%);
   font-size: 0.8em;
@@ -314,6 +331,7 @@ opacity: 0;
   font-weight: 500;
   z-index: 100;  
 }
+
 /* cart  */
 
 .navigation-bar-cart {

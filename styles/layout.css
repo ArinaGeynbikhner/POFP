@@ -31,13 +31,13 @@ body {
 
       
 .dots {
-    position: absolute;
-    top: 14.5vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 96%;
-    height: auto;
-    z-index: 100;
+  position: absolute;
+  top: 14.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96%;
+  height: auto;
+  z-index: 100;
 }
 .dots img {
     width: 100%;
@@ -188,7 +188,7 @@ body {
 .text-block {
     position: absolute;
     top: 22vw;
-    left: 7%;
+    left: 7.5%;
     transform: translateX(-50%);
     font-size: 0.8em;
     color: #ffffff;
