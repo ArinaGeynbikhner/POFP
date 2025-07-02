@@ -1098,9 +1098,527 @@ opacity: 0;
 }
 }
 
+@media screen and (min-width: 1020px) and (max-width: 1439px) {
+
+  /* merch */
+
+.comics.position-center {
+  width: 35vw; 
+}
+
+.canon.position-center {
+  width: 30vw;
+  top: -3%;
+}
+
+.envelope.position-center {
+  width: 23vw; 
+  top: 2%;
+}
+
+.position-left {
+  top: 23%;
+  left: 19%;
+
+}
+
+.position-right {
+  top: 15%;
+  left: 80%;
+
+}
+.button-right {
+  top: 45%;
+  left: 71%;
+}
+
+
+.button-left {
+  top: 45%;
+  left: 29%;
+}
+
+.choice-button {
+  top: 35vw;
+  left: 92.5%;
+}
+
+.price-protocol {
+  position: absolute;
+  top: 32vw;
+  left: 90%;
+  font-size: 0.8em;
+}
+
+.information-nalichie-protocol{
+  top: 35.5vw;
+  left: 91.5%;
+}
+
+/* cart */
+
+.product {
+  position: absolute;
+  top: 14vw;
+  left: 65%;
+}
+.size {
+  position: absolute;
+  top: 16vw;
+  left: 65.3%;
+}
+
+.piece {
+  position: absolute;
+  top: 18vw;
+  left: 64%;
+}
+
+.price {
+  position: absolute;
+  top: 20vw;
+  left: 64.7%;   
+}
+
+.product-name {
+  position: absolute;
+  top: 14vw;
+  left: 89%;
+}
+
+.size-name {
+  position: absolute;
+  top: 16vw;
+  left: 88.6%;
+}
+
+.piece-name {
+  position: absolute;
+  top: 18vw;
+  left: 87%;
+}
+
+.price-name {
+  position: absolute;
+  top: 20vw;
+  left: 88.5%;
+}
+
+.product-2 {
+  position: absolute;
+  top: 23vw;
+  left: 65%;
+}
+.size-2 {
+  position: absolute;
+  top: 25vw;
+  left: 65.5%;
+}
+
+.piece-2 {
+  position: absolute;
+  top: 27vw;
+  left: 64.2%;
+}
+
+.price-2 {
+  position: absolute;
+  top: 29vw;
+  left: 64.8%;   
+}
+.product-name-2 {
+  position: absolute;
+  top: 23vw;
+  left: 89.2%;
+}
+
+.size-name-2 {
+  position: absolute;
+  top: 25vw;
+  left: 89.2%;
+}
+
+.piece-name-2 {
+  position: absolute;
+  top: 27vw;
+  left: 87.2%;
+}
+
+.price-name-2 {
+  position: absolute;
+  top: 29vw;
+  left: 88.5%;
+}
+
+.product-3 {
+  position: absolute;
+  top: 32vw;
+  left: 65%; 
+}
+.size-3 {
+  position: absolute;
+  top: 34vw;
+  left: 65.3%;
+}
+
+.piece-3 {
+  position: absolute;
+  top: 36vw;
+  left: 64%;
+}
+
+.price-3 {
+  position: absolute;
+  top: 38vw;
+  left: 64.6%;  
+}
+
+.product-name-3 {
+  position: absolute;
+  top: 32vw;
+  left: 89.5%;
+}
+
+.size-name-3 {
+  position: absolute;
+  top: 34vw;
+  left: 89%;
+}
+
+.piece-name-3 {
+  position: absolute;
+  top: 36vw;
+  left: 87.4%;
+}
+
+.price-name-3 {
+  position: absolute;
+  top: 38vw;
+  left: 89%;
+}
+
+.delivery {
+  position: absolute;
+  top: 41vw;
+  left: 66.1%;
+}
+
+.taxes {
+  position: absolute;
+  top: 43vw;
+  left: 65.3%;
+}
+
+.total {
+opacity: 0; 
+}
+
+.product-img {
+  width: 15vw;
+  top: 24%;
+  left: 25%;
+
+}
+
+.product-2-img {
+  position: absolute;
+  width: 11vw;
+  top: 43%;
+  left: 25.5%;
+
+}
+
+.product-3-img {
+  position: absolute;
+  width: 13vw;
+  top: 67%;
+  left: 24.5%;
+}
+
+.delivery-amount {
+  position: absolute;
+  top: 41vw;
+  left: 88%;
+}
+
+.taxes-amount {
+  position: absolute;
+  top: 43vw;
+  left: 90.3%;
+}
+
+.total-amount {
+  position: absolute;
+  top: 46vw;
+  left: 68%;
+}
+
+.buy-button {
+  width: 10vw;
+  top: 91%;
+  left: 68%;
+}
+
+/* 404 */
+
+.nf-img{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 40vw; 
+}
+
+.nf-img-2{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 40vw; 
+}
+
+.sboy {
+  position: absolute;
+  top: 5vw;
+  left: 50%;
+}
+.comment {
+  position: absolute;
+  top: 40vw;
+  left: 50%;
+}
+
+.gradient {
+  opacity: 0;
+  width: 10vw; 
+}
+.gradient img {
+  opacity: 0;
+}
+
+.cross {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 48vw; 
+}
+
+.cross-2 {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  width: 48vw; 
+}
+
+/* game */
+
+.equalizer-circle {
+  position: absolute;
+  width: 31vw;
+  height: 31vw;
+  z-index: 1000;
+  top: 55%;
+  left: 50%;
+}
+
+.circle-back-2 {
+  position: absolute;
+  width: 32vw;
+  height: 32vw;
+  z-index: 500; 
+  top: 55%;
+  left: 50%;
+}
+
+.circle-back-1 {
+  position: absolute;
+  width: 43vw; 
+  height: 43vw;
+  z-index: 250; 
+  top: 55%;
+  left: 50%;
+}
+
+.circle-back-3 {
+  position: absolute;
+  width: 25vw; 
+  height: 25vw;
+  top: 55%;
+  left: 50%;
+ }
+
+.circle-back-center {
+  position: absolute;
+  width: 27vw;
+  height: 27vw;
+  z-index: 50; 
+  top: 55%;
+  left: 50%;
+}
+
+.circle-back-center-1 {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  top: 55%;
+  left: 50%;
+}
+
+.equalizer-circle-middle {
+  position: absolute;
+  width: 21vw;
+  height: 21vw;
+  top: 40%;
+  left: 50%;
+}
+
+.circle-back-center-2 {
+  opacity: 0;
+}
+
+.circle-sun {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  top: 55%;
+  left: 50%;
+}
+
+.vectors-1 {
+  position: absolute;
+  width: 47vw;
+  height: 47vw;
+  top: 55%;
+  left: 52%;
+}
+
+.vectors-2 {
+  position: absolute;
+  width: 47vw;
+  height: 47vw;
+  top: 55%;
+  left: 52%; 
+}
+
+.vectors-3 {
+  position: absolute;
+  width: 47vw;
+  height: 47vw;
+  top: 55%;
+  left: 52%;
+}
+
+.macos-vector {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  z-index: 800; 
+  top: 50%;
+  left: 53%;
+
+}
+
+.steam-vector {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  z-index: 800; 
+  top: 50%;
+  left: 53%;
+}
+
+.linux-vector {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  z-index: 800; 
+  top: 50%;
+  left: 53%; 
+}
+
+.windows-vector {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  z-index: 800; 
+  top: 50%;
+  left: 53%;
+}
+
+.macos {
+opacity: 0;
+}
+
+.steam {
+opacity: 0;
+}
+
+.linux {
+opacity: 0; 
+}
+
+.windows {
+opacity: 0;
+}
+
+.detected {
+  top: 12vw;
+  left: 7%;  
+}
+
+}
+
   /* десктопы */
 
 @media screen and (min-width: 1441px) {
+
+  /* 404 */
+
+.nf-img{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 35vw; 
+}
+
+.nf-img-2{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 35vw; 
+}
+
+.sboy {
+  position: absolute;
+  top: 5vw;
+  left: 50%;
+}
+.comment {
+  position: absolute;
+  top: 40vw;
+  left: 50%;
+}
+
+.gradient {
+  opacity: 0;
+  width: 10vw; 
+}
+.gradient img {
+  opacity: 0;
+}
+
+.cross {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 48vw; 
+}
+
+.cross-2 {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  width: 48vw; 
+}
+
 .logo {
     position: absolute;
     top: 1vw;
@@ -2366,3 +2884,4 @@ body.game-page .game {
     top: 9vw;
 }
   }
+
