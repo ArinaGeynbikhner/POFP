@@ -242,7 +242,7 @@ opacity: 0;
   top: 96vw;
   left: 78%;
   transform: translateX(-50%);
-  z-index: 100;
+  z-index: 10000;
   width: 35vw; 
 }
 .carousel {
