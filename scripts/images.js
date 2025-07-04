@@ -182,11 +182,9 @@ window.addEventListener('touchstart', (e) => {
 window.addEventListener('touchmove', (e) => {
   if (touchStartY !== null) {
     const delta = touchStartY - e.touches[0].clientY;
-    if (delta > 0) {
-      scrollProgress += delta * 0.001;
-      scrollProgress = Math.min(scrollProgress, 2);
-      updateScene();
-    }
+    scrollProgress += delta * 0.001; // Adjust scrollProgress based on swipe direction
+    scrollProgress = Math.max(0, Math.min(scrollProgress, 2)); // Clamp between 0 and 2
+    updateScene();
     touchStartY = e.touches[0].clientY;
   }
 });

@@ -27,13 +27,21 @@ function startExplosion() {
 }
 
 function init() {
+  // Проверка canvas
+  const canvas = document.getElementById('three-canvas');
+  if (!canvas) {
+    console.error('Canvas element not found!');
+    alert('Ошибка: Элемент canvas не найден.');
+    return;
+  }
+
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0x000000);
 
   camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
   camera.position.set(0, 0.4, 4.5);
 
-  renderer = new THREE.WebGLRenderer({ antialias: true, canvas: document.getElementById('three-canvas') });
+  renderer = new THREE.WebGLRenderer({ antialias: true, canvas: canvas });
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -44,45 +52,90 @@ function init() {
   scene.add(directionalLight);
 
   const loader = new THREE.GLTFLoader();
-  loader.load('model.glb', (gltf) => {
-    model = gltf.scene;
-    model.rotation.y = 5.1;
-    model.castShadow = true;
-    model.receiveShadow = true;
-    scene.add(model);
-    model.position.z = 0;
+  loader.load(
+    'model.glb',
+    (gltf) => {
+      model = gltf.scene;
+      model.rotation.y = 5.1;
+      model.castShadow = true;
+      model.receiveShadow = true;
+      scene.add(model);
+      model.position.z = 0;
+      console.log('Model loaded and added to scene:', model);
 
-    model.traverse((child) => {
-      if (child.isMesh) {
-        const geometry = child.geometry;
-        geometry.computeVertexNormals();
-        child.castShadow = true;
-        child.receiveShadow = true;
+      model.traverse((child) => {
+        if (child.isMesh) {
+          const geometry = child.geometry;
+          geometry.computeVertexNormals();
+          child.castShadow = true;
+          child.receiveShadow = true;
 
-        child.material = new THREE.MeshStandardMaterial({ color: 0x808080, roughness: 0.5, metalness: 0.1 });
+          child.material = new THREE.MeshStandardMaterial({ color: 0x808080, roughness: 0.5, metalness: 0.1 });
 
-        const positionsCopy = new Float32Array(geometry.attributes.position.array.length);
-        positionsCopy.set(geometry.attributes.position.array);
+          const positionsCopy = new Float32Array(geometry.attributes.position.array.length);
+          positionsCopy.set(geometry.attributes.position.array);
 
-        const normalsCopy = new Float32Array(geometry.attributes.normal.array.length);
-        normalsCopy.set(geometry.attributes.normal.array);
+          const normalsCopy = new Float32Array(geometry.attributes.normal.array.length);
+          normalsCopy.set(geometry.attributes.normal.array);
 
-        child.userData.originalData = { positions: positionsCopy, normals: normalsCopy };
-        geometry.attributes.position.needsUpdate = true;
-      }
-    });
+          child.userData.originalData = { positions: positionsCopy, normals: normalsCopy };
+          geometry.attributes.position.needsUpdate = true;
+        }
+      });
 
-    animate();
-  });
+      animate();
+    },
+    (progress) => {
+      console.log('Loading progress:', (progress.loaded / progress.total * 100).toFixed(2) + '%');
+    },
+    (error) => {
+      console.error('Error loading model:', error);
+      alert('Ошибка загрузки модели. Проверьте путь к model.glb.');
+    }
+  );
 
+  // Mouse wheel event
   window.addEventListener('wheel', (event) => {
     if (!model || scrollLocked) return;
 
     scrollProgress += event.deltaY * 0.0003;
     scrollProgress = Math.max(0, Math.min(1, scrollProgress));
+    console.log('Wheel scrollProgress:', scrollProgress); // Debug
+    updateScrollProgress();
+  });
 
+  // Touch events
+  let touchStartY = 0;
+  let touchMoved = false;
+
+  window.addEventListener('touchstart', (event) => {
+    if (!model || scrollLocked) return;
+    touchStartY = event.touches[0].clientY;
+    touchMoved = false;
+    console.log('Touch start Y:', touchStartY); // Debug
+  });
+
+  window.addEventListener('touchmove', (event) => {
+    if (!model || scrollLocked) return;
+    touchMoved = true;
+    const touchY = event.touches[0].clientY;
+    const deltaY = touchStartY - touchY;
+    scrollProgress += deltaY * 0.002;
+    scrollProgress = Math.max(0, Math.min(1, scrollProgress));
+    touchStartY = touchY;
+    console.log('Touch scrollProgress:', scrollProgress); // Debug
+    updateScrollProgress();
+  });
+
+  window.addEventListener('touchend', (event) => {
+    if (!model || scrollLocked || !touchMoved) return;
+    console.log('Touch ended'); // Debug
+  });
+
+  function updateScrollProgress() {
+    if (!model) return;
     if (scrollProgress < 0.25) {
-      const t = scrollProgress / 0.25;
+      const t = scrollProgress / 0.25; // Исправлено с 025
       model.position.z = t * pulseStartThreshold;
       pulseActive = false;
       shakingActive = false;
@@ -103,6 +156,8 @@ function init() {
       shakingActive = true;
     }
 
+    console.log('Model position.z:', model.position.z); // Debug
+
     if (!preExplosionPulseTriggered && scrollProgress >= 0.8 && scrollProgress < 0.9) {
       preExplosionPulseTriggered = true;
       setTimeout(() => {
@@ -110,7 +165,7 @@ function init() {
         shakingActive = false;
       }, 400);
     }
-  });
+  }
 }
 
 function updateModel() {
@@ -164,10 +219,14 @@ function updateModel() {
 
           if (tExplode >= 0.5 && !fadeStarted) {
             fadeStarted = true;
-            fadeOverlay.style.opacity = '1';
-            setTimeout(() => {
-              window.location.href = 'era.html';
-            }, 500);
+            if (fadeOverlay) {
+              fadeOverlay.style.opacity = '1';
+              setTimeout(() => {
+                window.location.href = 'era.html';
+              }, 500);
+            } else {
+              console.error('Fade overlay not found');
+            }
           }
         } else {
           amplitude = pulseAmount;
@@ -188,18 +247,24 @@ function animate() {
   requestAnimationFrame(animate);
   time += 0.016;
   updateModel();
-  renderer.render(scene, camera);
+  if (scene && camera && renderer) {
+    renderer.render(scene, camera);
+  } else {
+    console.error('Scene, camera, or renderer not initialized');
+  }
 }
 
 window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  if (camera && renderer) {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  }
 });
 
 try {
   init();
 } catch (error) {
-  console.error('Ошибка инициализации:', error);
+  console.error('Initialization error:', error);
   alert('Ошибка при инициализации сцены.');
 }

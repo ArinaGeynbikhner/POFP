@@ -857,8 +857,8 @@ opacity: 0;
 }
 .equalizer-circle {
   position: absolute;
-  width: 95vw;
-  height: 95vw;
+  width: 70vw;
+  height: 70vw;
 }
 
 .circle-back-2 {
@@ -881,8 +881,8 @@ opacity: 0;
 
 .circle-back-1 {
   position: absolute;
-  width: 70vw; 
-  height: 70vw;
+  width: 90vw; 
+  height: 90vw;
   z-index: 250; 
   top: 50%;
   left: 50%;
@@ -944,11 +944,11 @@ opacity: 0;
 
 .equalizer-circle-middle {
   position: absolute;
-  width: 60vw;
-  height: 60vw;
+  width: 50vw;
+  height: 50vw;
   background-color: transparent;
   z-index: 550; 
-  top: 37%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: rotateCircleMiddle 25s linear infinite; 
@@ -976,7 +976,7 @@ opacity: 0;
   height: 120vw;
   z-index: 800; 
   top: 45%;
-  left: 55%;
+  left: 53%;
   transform: translate(-50%, -50%); 
   animation: blink-macos 1.25s step-end forwards; 
   opacity: 0; 
@@ -987,17 +987,13 @@ opacity: 0;
   display: block;
   object-fit: contain;
 }
+
 .steam-vector {
-  position: absolute;
-  width: 120vw;
-  height: 120vw;
-  z-index: 801; 
-  top: 45%;
-  left: 55%;
-  transform: translate(-50%, -50%); 
-  animation: blink-steam 1.25s step-end forwards 1.25s;
-  opacity: 0;
-  display: none; 
+  opacity: 0; 
+}
+.steam-vector img {
+opacity: 0;
+
 }
 
 .linux-vector {
@@ -1005,7 +1001,7 @@ opacity: 0;
   width: 100vw;
   height: 100vw;
   z-index: 801; 
-  top: 45%;
+  top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
   animation: blink-linux 1.25s step-end forwards 2.5s; 
@@ -1023,7 +1019,7 @@ opacity: 0;
   width: 100vw;
   height: 100vw;
   z-index: 801; 
-  top: 45%;
+  top: 47%;
   left: 55%;
   transform: translate(-50%, -50%); 
   animation: blink-windows 1.25s step-end forwards 3.75s;
@@ -1035,7 +1031,23 @@ opacity: 0;
   display: block;
   object-fit: contain;
 }
-
+.steam-vector-mobile {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  z-index: 801; 
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  animation: blink-linux 1.25s step-end forwards 2.5s; 
+  opacity: 1; 
+}
+.steam-vector-mobile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
 .macos {
   position: absolute;
   top: -0.6vw;
@@ -1115,6 +1127,25 @@ opacity: 0;
   pointer-events: none;
   z-index: 20;
 }
+.vectors-1 {
+  position: absolute;
+  width: 109vw;
+  height: 109vw;
+}
+
+.vectors-2 {
+  position: absolute;
+  width: 109vw;
+  height: 109vw;
+}
+
+.vectors-3 {
+  position: absolute;
+  width: 109vw;
+  height: 109vw;
+}
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1019px) and (orientation: portrait) {

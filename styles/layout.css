@@ -625,7 +625,7 @@ body.game-page .game {
   left: 55%;
   transform: translate(-50%, -50%); 
   animation: blink-steam 1.25s step-end forwards 1.25s;
-  opacity: 0; 
+  opacity: 1; 
 }
 .steam-vector img {
   width: 100%;
@@ -717,7 +717,9 @@ body.game-page .game {
   font-weight: 400;
   z-index: 100; 
 }
-
+.steam-vector-mobile {
+  opacity: 0;
+}
 @keyframes blink-macos {
   0% { opacity: 0; } 
   25% { opacity: 1; } 
