@@ -1496,7 +1496,7 @@ body.cart-page .cart {
   position: absolute;
   z-index: 1000;
   width: 10vw;
-  top: 89.5%;
+  top: 85%;
   left: 92.5%;
   transform: translateX(-50%);
   animation: clickScale 0.2s ease-in-out;
